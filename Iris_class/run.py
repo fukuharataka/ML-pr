@@ -3,5 +3,10 @@ import matplotlib.pyplot as plt  # 描画用
 import pandas as pd  # 行列計算、csv読み込み
 # import mglearn
 
-x = np.array([[1, 2, 3], [4, 5, 6]])
-print("x:\n{}".format(x))
+x = np.linspace(-10, 10, 100)
+
+y = np.sin(x)
+
+plt.plot(x, y, marker="x")
+
+plt.show()
